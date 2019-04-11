@@ -31,6 +31,8 @@ public class Pers {
     //go through all powers of 2, 3, and 7
     long s = System.nanoTime();
     int md = Integer.parseInt(args[0]);
+    System.setErr(new PrintStream(new File(md+"error")));
+    System.setOut(new PrintStream(new File(md+"out")));
     TreeMap<int[],BigInteger> ds = new TreeMap<int[],BigInteger>(new Comp());
     ArrayList<BigInteger> p7s = new ArrayList<>();
     ArrayList<BigInteger> p5s = new ArrayList<>();
@@ -56,13 +58,18 @@ public class Pers {
       p2s.add(p2);
       p2 = p2.multiply(TWO);
     }
+    int[][][] vals732 = new int[p7s.size()][][];
+    int[][][] vals735 = new int[p7s.size()][][];
     int po7 = 0;
+    //index 7 3 5 2
     while(po7<p7s.size()){
       int po3=0;
-
+      ArrayList<int[]>in732 = new ArrayList<>();
+      ArrayList<int[]>in735 = new ArrayList<>();
       System.out.println(String.format("%d th power of 7 reached in %d time",po7,(System.nanoTime()-s)));
       while(po3<p3s.size()){
-
+	ArrayList<Integer>inin732 = new ArrayList<>();
+        ArrayList<Integer>inin735 = new ArrayList<>();
         BigInteger m73 = p7s.get(po7).multiply(p3s.get(po3));
         if(m73.toString().length()>=md)break;//too big
         int po2=0;
@@ -72,6 +79,7 @@ public class Pers {
           int[] x = {po2,po3,0,po7};
           ds.put(x,d);
           ++po2;
+          inin732.add(0);
         }
         int po5=0;
         while(po5<p5s.size()){
@@ -80,15 +88,19 @@ public class Pers {
           int[] x = {0,po3,po5,po7};
           ds.put(x,d);
           ++po5;
+          inin735.add(0);
         }
+        in732.add(new int[inin732.size()]);
+        in735.add(new int[inin735.size()]);
         ++po3;
       }
+      vals732[po7] = in732.toArray(new int[in732.size()][]);
+      vals735[po7] = in735.toArray(new int[in735.size()][]); 
       ++po7;
     }
     System.out.println("Total number:" + ds.size());
     //this only deals with even numbers for now
     System.out.println("Time to prep:" + (System.nanoTime()-s));
-    TreeMap<int[],Integer> values = new TreeMap<int[],Integer>(new Comp());
     int max = 0;
     int ml = 1;
     oot: for(Entry<int[], BigInteger> e :ds.entrySet()){
@@ -99,7 +111,11 @@ public class Pers {
         ml = x.length();
       }
       if(x.length()==1){
-        values.put(K,0);
+        if(K[0]>0){
+          vals732[K[3]][K[1]][K[0]] = 0;
+        }else{
+          vals735[K[3]][K[1]][K[2]] = 0;
+        }
         continue;
       }
       int c2 = 0;
@@ -109,7 +125,13 @@ public class Pers {
       for(char c:x.toCharArray()){
         int y=c-48;
         if(y==0){
-          values.put(K,1);//next is 0, is dead
+          //next is 0, is dead
+          if(K[0]>0){
+            vals732[K[3]][K[1]][K[0]] = 1;
+          }
+          else{
+            vals735[K[3]][K[1]][K[2]] = 1;
+          }
           continue oot;}
         while(y%2==0){
           ++c2;
@@ -127,16 +149,32 @@ public class Pers {
       }
       if(c2>0 && c5>0){
         //0 in next one
-        values.put(K,2);
+        if(K[0]>0){
+            vals732[K[3]][K[1]][K[0]] = 2;
+        }
+        else{
+            vals735[K[3]][K[1]][K[2]] = 2;
+        }
         continue oot;
       }
       int[] f = {c2,c3,c5,c7};
-      int m = 1+values.get(f);
+      int m = 0;
+      if(c2>0){
+          m = vals732[c7][c3][c2]+1;
+      }
+      else{
+          m = vals735[c7][c3][c5]+1;
+      }
       if(m>=max){
         System.out.println("Local max "+Arrays.toString(K)+" "+m);
         max=m;
       }
-      values.put(K,m);
+      if(K[0]>0){
+          vals732[K[3]][K[1]][K[0]] = m;
+      }
+      else{
+          vals735[K[3]][K[1]][K[2]] = m;
+      }
     }
 
     System.out.println("TOTAL TIME:" + (System.nanoTime()-s));
