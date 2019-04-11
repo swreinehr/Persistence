@@ -18,9 +18,13 @@ and run with
 
 java Pers <md>
 
-Where md is the maximum number of digits of the 2nd to last element in the desired longest chain. See below for why that is what I use.
+Where md is the maximum number of digits of the 2nd element in the desired longest chain. See below for why that is what I use.
 
 Currently, I've had this run successfully for 250 as an md setting, which found no longer sequences than found in previous work
+
+Note that for x>10, the number after x is at most 9^floor(num_digs(x)), which has length less than 2+log_10(9)*numdigs(x)
+
+The bounds for the overall problem can thus be determined from this.
 
 These are small, distinct starting numbers for 11 steps that it found.
 
