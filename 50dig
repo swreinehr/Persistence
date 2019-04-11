@@ -1,0 +1,157 @@
+0 th power of 7 reached in 7439733 time
+1 th power of 7 reached in 68837440 time
+2 th power of 7 reached in 101670028 time
+3 th power of 7 reached in 128658617 time
+4 th power of 7 reached in 155880054 time
+5 th power of 7 reached in 180453952 time
+6 th power of 7 reached in 207290260 time
+7 th power of 7 reached in 238831377 time
+8 th power of 7 reached in 280153675 time
+9 th power of 7 reached in 305458390 time
+10 th power of 7 reached in 324893106 time
+11 th power of 7 reached in 338300925 time
+12 th power of 7 reached in 351200623 time
+13 th power of 7 reached in 365079985 time
+14 th power of 7 reached in 377456288 time
+15 th power of 7 reached in 389446467 time
+16 th power of 7 reached in 401343128 time
+17 th power of 7 reached in 424089928 time
+18 th power of 7 reached in 435956428 time
+19 th power of 7 reached in 446162745 time
+20 th power of 7 reached in 455778062 time
+21 th power of 7 reached in 465131323 time
+22 th power of 7 reached in 474156968 time
+23 th power of 7 reached in 483283688 time
+24 th power of 7 reached in 491823036 time
+25 th power of 7 reached in 499123171 time
+26 th power of 7 reached in 510494051 time
+27 th power of 7 reached in 526650453 time
+28 th power of 7 reached in 539701007 time
+29 th power of 7 reached in 552017824 time
+30 th power of 7 reached in 563552859 time
+31 th power of 7 reached in 572072058 time
+32 th power of 7 reached in 579523472 time
+33 th power of 7 reached in 608190521 time
+34 th power of 7 reached in 614431473 time
+35 th power of 7 reached in 620543746 time
+36 th power of 7 reached in 626324033 time
+37 th power of 7 reached in 631712289 time
+38 th power of 7 reached in 636766887 time
+39 th power of 7 reached in 641088581 time
+40 th power of 7 reached in 644974482 time
+41 th power of 7 reached in 648508662 time
+42 th power of 7 reached in 651673606 time
+43 th power of 7 reached in 654446008 time
+44 th power of 7 reached in 656966292 time
+45 th power of 7 reached in 659135045 time
+46 th power of 7 reached in 661079417 time
+47 th power of 7 reached in 662793364 time
+48 th power of 7 reached in 664218495 time
+49 th power of 7 reached in 665489133 time
+50 th power of 7 reached in 666544505 time
+51 th power of 7 reached in 667425512 time
+52 th power of 7 reached in 668156341 time
+53 th power of 7 reached in 668745176 time
+54 th power of 7 reached in 669214678 time
+55 th power of 7 reached in 669570072 time
+56 th power of 7 reached in 669848589 time
+57 th power of 7 reached in 670063468 time
+Total number:240590
+Time to prep:689644876
+Now processing 1 digits, starting with 12
+Local max [2, 1, 0, 0] 1
+Local max [1, 0, 0, 1] 1
+Local max [0, 1, 1, 0] 1
+Local max [4, 0, 0, 0] 1
+Local max [1, 2, 0, 0] 1
+Local max [0, 1, 0, 1] 1
+Local max [3, 1, 0, 0] 1
+Local max [0, 3, 0, 0] 2
+Local max [2, 0, 0, 1] 2
+Local max [0, 0, 1, 1] 2
+Local max [2, 2, 0, 0] 2
+Local max [4, 1, 0, 0] 2
+Local max [0, 0, 0, 2] 3
+Local max [0, 1, 2, 0] 3
+Local max [5, 1, 0, 0] 3
+Local max [1, 0, 0, 2] 3
+Now processing 2 digits, starting with 105
+Local max [0, 1, 0, 2] 3
+Local max [3, 1, 0, 1] 3
+Local max [0, 0, 2, 1] 3
+Local max [0, 3, 0, 1] 3
+Local max [2, 0, 0, 2] 3
+Local max [5, 2, 0, 0] 3
+Local max [1, 1, 0, 2] 3
+Local max [4, 1, 0, 1] 3
+Local max [0, 0, 0, 3] 3
+Local max [1, 3, 0, 1] 4
+Local max [7, 1, 0, 0] 4
+Local max [1, 0, 0, 3] 4
+Local max [8, 1, 0, 0] 4
+Now processing 3 digits, starting with 1008
+Local max [0, 2, 2, 1] 4
+Local max [2, 2, 0, 2] 4
+Local max [1, 3, 0, 2] 4
+Local max [7, 1, 0, 1] 5
+Now processing 4 digits, starting with 10125
+Local max [7, 1, 0, 2] 5
+Local max [2, 8, 0, 0] 5
+Local max [10, 3, 0, 0] 6
+Local max [2, 5, 0, 2] 6
+Local max [0, 3, 0, 4] 6
+Local max [6, 3, 0, 2] 6
+Now processing 5 digits, starting with 100352
+Local max [8, 3, 0, 2] 7
+Local max [1, 10, 0, 1] 7
+Now processing 6 digits, starting with 1000188
+Local max [10, 7, 0, 0] 7
+Local max [1, 13, 0, 0] 7
+Local max [11, 7, 0, 0] 8
+Now processing 7 digits, starting with 10077696
+Now processing 8 digits, starting with 100442349
+Local max [12, 7, 0, 2] 9
+Now processing 9 digits, starting with 1000604745
+Now processing 10 digits, starting with 10048828125
+Now processing 11 digits, starting with 100370866176
+Local max [33, 3, 0, 0] 9
+Now processing 12 digits, starting with 1000376035344
+Local max [19, 4, 0, 6] 10
+Now processing 13 digits, starting with 10030613004288
+Now processing 14 digits, starting with 100079285869206
+Local max [4, 20, 0, 5] 10
+Now processing 15 digits, starting with 1001129150390625
+Now processing 16 digits, starting with 10001473779644928
+Now processing 17 digits, starting with 100008061430022144
+Now processing 18 digits, starting with 1000564106038644672
+Now processing 19 digits, starting with 10004973145561798656
+Now processing 20 digits, starting with 100098100774949410728
+Now processing 21 digits, starting with 1000914188437244940544
+Now processing 22 digits, starting with 10003354056715501246464
+Now processing 23 digits, starting with 100026862945570988163072
+Now processing 24 digits, starting with 1000752212090579937198336
+Now processing 25 digits, starting with 10006854080513164274147328
+Now processing 26 digits, starting with 100010675757882519890362368
+Now processing 27 digits, starting with 1000039996626120005086347264
+Now processing 28 digits, starting with 10000470498176356015430172672
+Now processing 29 digits, starting with 100045667995804755508846657536
+Now processing 30 digits, starting with 1000463736088392949710326857728
+Now processing 31 digits, starting with 10003615556106987548657201553408
+Now processing 32 digits, starting with 100029477764925001804101756125184
+Now processing 33 digits, starting with 1000228004145485715647303497285632
+Now processing 34 digits, starting with 10001612350991082801924612330356736
+Now processing 35 digits, starting with 100013290154084488086460799073386496
+Now processing 36 digits, starting with 1000066138842930189465465328666411008
+Now processing 37 digits, starting with 10005496235831535662316349107300040704
+Now processing 38 digits, starting with 100000643350673548816364195847950303232
+Now processing 39 digits, starting with 1000416047010265066961845190343121698816
+Now processing 40 digits, starting with 10003492654113069125491374157474843066368
+Now processing 41 digits, starting with 100032092652633455970221053703612292661248
+Now processing 42 digits, starting with 1000254151277032660341084836148200293269504
+Now processing 43 digits, starting with 10001873804852341492322539114424718424276992
+Now processing 44 digits, starting with 100012061415064147096912618433817059593814016
+Now processing 45 digits, starting with 1000053852272957090008071981168358074999635968
+Now processing 46 digits, starting with 10000255217567407671615783024713664189167566848
+Now processing 47 digits, starting with 100003257484616642097650687963223499367937736704
+Now processing 48 digits, starting with 1000033562903457351467295666225254535675048828125
+TOTAL TIME:1187295790
